@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "ML Prediction Service Running"
+    return "Welcome to ML Prediction API - Service Running"
 
 @app.route("/predict", methods=["POST"])
 def predict():
