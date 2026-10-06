@@ -8,7 +8,7 @@ def home():
 @app.route("/predict", methods=["POST"])
 def predict():
     data = request.get_json()
-        return jsonify({"prediction": sum(data["features"]) * 10})
+    return jsonify({"prediction": sum(data["features"])})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
